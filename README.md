@@ -12,3 +12,6 @@ In the invoice:
 Download the EPC-QR.zip file and upload it in the Plugins->Add New->Upload Plugin Dialogue on your wordpress site.
 
 The settings for the plugin will appear as a new tab in the WooCommerce settings.
+
+# Requirements
+php 7.2 +
