@@ -9,7 +9,7 @@ require_once("settings-tab.php");
 
 /*
 Plugin Name: EPC-QR-codes for banktransfer
-Plugin URI:  -
+Plugin URI:  https://github.com/GruberViktor/EPC-QR
 Description: Create EPC-Codes for money transfer
 Version:     0.1
 Author:      Viktor Gruber
