@@ -135,7 +135,7 @@ class WC_epc_qr {
                     'name' => __('Invoice settings', 'epc-qr-settings-tab' ),
                     'type' => 'title',
                     'desc' => 'In order to put the code into your invoices, you will have to follow the instructions of your invoicing plugin regarding using your own templates.
-                               Within this template (usually in the body.php file), you can insert the code "echo EPC_QR_invoice( $order );" - without the parantheses - wherever you want to, preferably after the notes. Check out <a href="'.plugins_url('/includes/screenshot.png', __FILE__).'">this screenshot</a> to get an idea.
+                               Within this template (usually in the body.php file), you can insert the code "if (function_exists(EPC_QR_invoice)){ echo EPC_QR_invoice( $order ); }" - without the parantheses - wherever you want to, preferably after the notes. Check out <a href="'.plugins_url('/includes/screenshot.png', __FILE__).'">this screenshot</a> to get an idea.
                                ',
                     'id'   => 'wc_epc_qr_invoice_instructions'
                 ),
