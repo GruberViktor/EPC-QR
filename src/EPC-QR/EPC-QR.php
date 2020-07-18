@@ -33,7 +33,9 @@ function EPC_QR_in_thank_you_text( $text, $order) {
     $ordernr = $order->get_order_number();	
     $payment_method = $order->get_payment_method();
 
-	if ( $payment_method == 'bacs'){
+    $queried_payment_methods = array('bacs', 'cod');
+
+    if ( in_array( $payment_method, $queried_payment_methods ) ){
 
         //QR-code Options
         $options = new QROptions([
